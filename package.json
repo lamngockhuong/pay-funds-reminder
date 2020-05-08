@@ -1,0 +1,37 @@
+{
+  "name": "pay-funds-reminder",
+  "version": "1.0.0",
+  "description": "Reminder to pay funds",
+  "main": "src/index.js",
+  "scripts": {
+    "lint": "eslint ./src --fix",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -D --out-dir dist",
+    "start": "node dist",
+    "start:dev": "nodemon --watch .env --watch src --exec babel-node src --source-maps"
+  },
+  "keywords": [],
+  "author": "Lam Ngoc Khuong <me@ngockhuong.com>",
+  "license": "ISC",
+  "dependencies": {
+    "btoa": "^1.2.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "googleapis": "^50.0.0",
+    "lodash": "^4.17.15",
+    "moment": "^2.25.3",
+    "node-cron": "^2.0.3",
+    "node-fetch": "^2.6.0",
+    "nodemon": "^2.0.3",
+    "pug": "^2.0.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/node": "^7.4.5",
+    "@babel/plugin-transform-runtime": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "eslint": "^6.8.0"
+  }
+}
